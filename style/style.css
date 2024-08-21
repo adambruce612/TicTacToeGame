@@ -1,0 +1,54 @@
+html {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 500px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#game-board {
+    margin: auto;
+    width: 325px;
+    font-size: 0;
+}
+
+.row {
+    height: 100px;
+}
+
+.board-square {
+    margin: auto;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#top-center, #bottom-center {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#middle-center {
+    border: 2px solid black;
+}
+
+#top-left, #middle-left, #top-right, #middle-right {
+    border-bottom: 2px solid black;
+}
+
+#top-right {
+    border-bottom: 2px solid black;
+}
+
+
+
+
+
+
+
+
