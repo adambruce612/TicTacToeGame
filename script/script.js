@@ -8,8 +8,22 @@ const bottomLeft = document.getElementById("bottom-left");
 const bottomCenter = document.getElementById("bottom-center");
 const bottomRight = document.getElementById("bottom-right");
 
-function chooseSquare(square) {
-    square.disabled = true;
+let topLeftDisabled = false, topCenterDisabled, topRightDisabled, middleLeftDisabled, middleCenterDisabled, middleRightDisabled, bottomLeftDisabled, bottomCenterDisabled, bottomRightDisabled = false;
+
+function isValid(topLeft) {
+    if (!topLeft.disabled) {
+        chooseSquare(this);
+    } else {
+        alert("This square is already taken. Please choose again.");
+    }
 }
 
-topLeft.addEventListener('click', chooseSquare(topLeft));
+function chooseSquare(square) {
+    this.disabled = true;
+    console.log(`${this} - ${this.disabled}`);
+}
+
+
+
+topLeft.addEventListener('click', isValid(topLeft));
+
