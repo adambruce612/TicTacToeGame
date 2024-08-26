@@ -12,7 +12,7 @@ let topLeftDisabled = false, topCenterDisabled, topRightDisabled, middleLeftDisa
 
 function isValid(topLeft) {
     if (!topLeft.disabled) {
-        chooseSquare(this);
+        chooseSquare();
     } else {
         alert("This square is already taken. Please choose again.");
     }
